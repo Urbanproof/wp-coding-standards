@@ -41,3 +41,14 @@ Extending the ruleset is higly recommended, as it is very hard to predict exact 
     </rule>
 </ruleset>
 ```
+
+## Usage
+- Run automatically before each commit with my [PHPCS-pre-commit git-hook](https://github.com/Urbanproof/phpcs-pre-commit)
+- Run from command line; `vendor/bin/phpcs`
+- Integrate into your IDE
+    - Tested only with VS Code using [this phpcs extension](https://marketplace.visualstudio.com/items?itemName=ikappas.phpcs)
+    - Note that you might have to restart your IDE before PHPCS is detected
+
+## Troubleshooting
+- IDE complains that it cannot detect PHPCS
+    - It happens, try restarting your IDE
