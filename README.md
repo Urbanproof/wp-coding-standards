@@ -7,10 +7,15 @@
         {
             "type": "vcs",
             "url": "https://github.com/Urbanproof/wp-coding-standards.git"
-        },
-    ]
+        }
+    ],
     ```
-2. Require the package: `composer require --dev urbanproof/wp-coding-standards`
+2. Set stability requirements (necessary beacuse of the roave/security-advisories-package):
+    ```json
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    ```
+3. Require the package: `composer require --dev urbanproof/wp-coding-standards`
 
 ## Recommended - extend the ruleset
 I also recommend extending it, specifying couple of things, mainly text domain, and files to scan.
