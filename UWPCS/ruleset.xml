@@ -8,6 +8,8 @@
   <arg value="-colors"/>
   <arg value="psvn"/>
 
+  <exclude-pattern>/vendor/*</exclude-pattern>
+
   <rule ref="WordPress-Extra">
     <exclude name="WordPress.Files.FileName"/>
     <exclude name="WordPress.PHP.DisallowShortTernary"/>
