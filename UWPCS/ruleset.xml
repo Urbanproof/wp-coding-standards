@@ -6,7 +6,7 @@
   <!-- Scan only PHP files -->
   <arg name="extensions" value="php"/>
   <arg value="-colors"/>
-  <arg value="psvn"/>
+  <arg value="psv"/>
 
   <exclude-pattern>/vendor/*</exclude-pattern>
 
