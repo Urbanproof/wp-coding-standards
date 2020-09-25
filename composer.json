@@ -1,0 +1,38 @@
+{
+    "name": "urbanproof/wp-coding-standards",
+    "description": "My take on WordPress coding standards (for PHPCS)",
+    "type": "phpcodesniffer-standard",
+    "license": "WTFPLv2",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "keywords": [
+        "phpcs",
+        "standards",
+        "WordPress"
+    ],
+    "authors": [
+        {
+            "name": "Iikka Timlin",
+            "homepage": "https://github.com/Urbanproof/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Urbanproof/wp-coding-standards/issues",
+        "docs": "https://github.com/Urbanproof/wp-coding-standards"
+    },
+    "require": {
+        "wp-coding-standards/wpcs": "^2.3",
+        "phpcompatibility/php-compatibility": "^9.3",
+        "roave/security-advisories": "dev-master",
+        "squizlabs/php_codesniffer": "^3.5",
+        "php": ">=7.2",
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0"
+    },
+    "scripts": {
+        "install-ruleset": [
+            "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+            "\"vendor/bin/phpcs\" --config-set default_standard UWPCS"
+        ],
+        "post-install-cmd": "@install-ruleset"
+    }
+}
