@@ -52,3 +52,4 @@ Extending the ruleset is higly recommended, as it is very hard to predict exact 
 ## Troubleshooting
 - IDE complains that it cannot detect PHPCS
     - It happens, try restarting your IDE
+- Feel free to submit an issue
